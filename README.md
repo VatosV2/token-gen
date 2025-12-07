@@ -40,6 +40,6 @@ Feel free to fork, modify, and experiment however you like. 😊
 
 ## Contributers
 
-- **`cf-vatos`** - Head Developer
+- **`VatosV2`** - Head Developer
 - **`zkamo`** - Helped Developing (https://github.com/zkamo)
 
