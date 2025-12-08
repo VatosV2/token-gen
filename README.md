@@ -25,6 +25,7 @@
 - **`Generating Discord Accounts`** - Browser Based Token Generation
 - **`Verifying Discord Accounts`** - Verifies Discord Accounts (Need to implement mail server)
 - **`Humanizing Discord Accounts`** - Humanizes Discord Tokens
+- **`Captcha Solving`** - Text Based Captcha Solving
 
 ## Developers Only
 
