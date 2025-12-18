@@ -87,7 +87,6 @@ class DiscordRegister:
             solver: CaptchaSolver = CaptchaSolver(page, worker_id)
             Logger.STATUS = f"{NexusColor.YELLOW}Waiting For Captcha"
             Logger.queue_log(worker_id=worker_id)
-            time.sleep(300)
 
             frame = solver.find_hcaptcha_frame(page=page, timeout=self.config.get("captcha_timeout"))
             if not frame:
@@ -228,3 +227,4 @@ class DiscordRegister:
         ]
 
         Logger.queue_stats(worker_id, stats)
+
