@@ -3,11 +3,11 @@
     "captcha_timeout": 100,
     "solver": {
         "ai_service": "openrouter",
-        "ai_api_key": "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"
+        "ai_api_key": ""
     },
     "verification": {
         "mail_provider": "cybertemp",
-        "mail_api_key": "tk_85939d59734836781dd64a5e73745241113bfd1152bd9d56b6e47b80dcbe2832"
+        "mail_api_key": ""
     },
     "humanizer": {
         "enabled": true,
@@ -19,4 +19,5 @@
     "logs": {
         "censor_token": true
     }
+
 }
