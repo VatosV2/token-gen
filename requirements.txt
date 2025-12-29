@@ -1,4 +1,4 @@
-camoufox
+camoufox[geopip]
 curl_cffi
 Flask
 Pillow
