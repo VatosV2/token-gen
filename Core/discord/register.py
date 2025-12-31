@@ -65,7 +65,7 @@ class DiscordRegisterService:
             self.session.headers.update({"authorization": token})
             token_status = DiscordUtils.check_discord_token(session=self.session).get("status", "Invalid")
             if token_status == "Valid":
-                self.stats.mark_locked()
+                self.stats.mark_valid()
                 self.logger.log_token(f"Succsefully Created Account -> {NexusColor.GREEN} ", token)
                 return
             
