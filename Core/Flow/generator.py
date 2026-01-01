@@ -28,6 +28,7 @@ class TokenGenerator:
         self.stats = stats
 
     def run(self):
+        ctx = None
         try: 
             ctx = self.context_factory.create()
 
@@ -46,12 +47,19 @@ class TokenGenerator:
             self.storage.save(ctx, "email_verified.txt")
 
             if self.config["humanizer"]["enabled"]:
-                succses = self.humaniser.run()
-                if succses:
+                success = self.humaniser.run()
+                if success:
                     self.storage.save(ctx, "humanized.txt")
                 
         except Exception as e:
-            if isinstance(self.mail_api, CybertempApi) and ctx:
-                self.mail_api.delete_mailbox(email=ctx.email)
-            self.logger.log(f"Account generation failed -> {NexusColor.RED}{e} ")
+            self.logger.log(
+                f"Account generation failed -> {NexusColor.RED}{e}"
+            )
+
+        finally:
+            if isinstance(self.mail_api, CybertempApi) and ctx and hasattr(ctx, "email"):
+                try:
+                    self.mail_api.delete_mailbox(email=ctx.email)
+                except Exception:
+                    pass
         
