@@ -11,6 +11,7 @@ class CybertempApi(MailApi):
     def __init__(self, api_key: str):
         super().__init__(api_key)
         self.api_key = api_key
+        self.domains = self.get_domains()
 
     def create_account(self, username: str, password: str) -> Optional[str]:
         
@@ -55,6 +56,24 @@ class CybertempApi(MailApi):
                 "html": msg.get("html", "")
             })
         return normalized
+
+    def get_domains(self, type: str = "discord") -> list:
+        try:
+            resp = requests.get(f"{self.BASE_URL}/getDomains?type={type}",
+                               headers=self.headers,
+                               timeout=10,
+                            )
+        except requests.RequestException as e:
+            raise RuntimeError(f"Network error fetching CyberTemp inbox: {e}")
+
+        if not resp.ok:
+            raise RuntimeError(
+                f"CyberTemp API returned {resp.status_code}: {resp.text}"
+            )
+
+        data = resp.json()
+        return data
+    
 
     def delete_mailbox(self, email: str) -> bool:
         try:
