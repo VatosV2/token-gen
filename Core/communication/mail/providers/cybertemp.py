@@ -6,7 +6,7 @@ from Core.communication.mail.base import MailApi
 
 class CybertempApi(MailApi):
     BASE_URL = "https://api.cybertemp.xyz"
-    DOMAINS = ["emziegz.com", "loganister.com", "resolutux.com", "rexabot.com"]
+    DOMAINS = ["rainga.ng", "soniot.fr", "diddyricky.com", "lonard-os.com"]
 
     def __init__(self, api_key: str):
         super().__init__(api_key)
