@@ -6,7 +6,6 @@ from Core.communication.mail.base import MailApi
 
 class CybertempApi(MailApi):
     BASE_URL = "https://api.cybertemp.xyz"
-    DOMAINS = ["emziegz.com", "loganister.com", "resolutux.com", "rexabot.com"]
 
     def __init__(self, api_key: str):
         super().__init__(api_key)
@@ -15,7 +14,7 @@ class CybertempApi(MailApi):
 
     def create_account(self, username: str, password: str) -> Optional[str]:
         
-        email = f"{username}@{random.choice(self.DOMAINS)}"
+        email = f"{username}@{random.choice(self.domains)}"
 
         try:
             self.fetch_inbox(email, password)
