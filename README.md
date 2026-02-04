@@ -4,7 +4,7 @@
   </a>
 </p>
 
-  <h3 align="center">??? Token Gen <a href="https://discord.gg/MNy9ftqkwn"></a></h3>
+  <h3 align="center">??? Token Gen <a href="https://t.me/cfvatos"></a></h3>
 
   <p align="center">
     For Developers Only - Ready To Use
