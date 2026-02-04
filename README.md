@@ -10,7 +10,7 @@
     For Developers Only - Ready To Use
     <br/>
     <br/>
-    <a href="https://discord.gg/MNy9ftqkwn">Discord Server</a>
+    <a href="https://t.me/cfvatos">Telegram Channel</a>
     <a>‎ ‎ Star to support ⭐</a>
   </p>
 </p>
