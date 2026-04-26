@@ -16,6 +16,13 @@
 </p>
 <br/>
 
+## Custom Work / Commissions
+
+I am available for custom development work, including Discord tools, automation scripts, and other Python projects.
+
+If you're interested in commissioning something, feel free to contact me on Telegram:
+
+👉 https://t.me/vatosv2
 
 ## Screenshot
 ![picture](github_assets/token-gen-screenshot.png)
