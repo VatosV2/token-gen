@@ -4,42 +4,56 @@
   </a>
 </p>
 
-  <h3 align="center">??? Token Gen <a href="https://t.me/cfvatos"></a></h3>
+<h3 align="center">??? Token Gen <a href="https://t.me/cfvatos"></a></h3>
 
-  <p align="center">
-    For Developers Only - Ready To Use
-    <br/>
-    <br/>
-    <a href="https://t.me/cfvatos">Telegram Channel</a>
-    <a>‎ ‎ Star to support ⭐</a>
-  </p>
+<p align="center">
+  Most Advanced Token Gen - Powered by <a href="https://anysolver.com">Anysolver.com</a>
+  <br/>
+  <br/>
+  <a href="https://t.me/cfvatos">Telegram Channel</a>
+  <a>‎ ‎ Star to support ⭐</a>
 </p>
+
 <br/>
 
 ---
 
+## 📸 Preview
+![picture](github_assets/token-gen-screenshot.png)
+---
 
-<p align="center">
-  <strong>🔐 Captcha solving by <a href="https://anysolver.com" target="_blank">Anysolver.com</a></strong><br>
-  <strong>🌐 Proxies: <a href="https://nodeproxies.xyz" target="_blank">NodeProxies.xyz</a></strong><br><br>
-</p>
+## ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| **HCaptcha Solving** | Automated solving via <a href="https://anysolver.com" target="_blank">Anysolver.com</a> |
+| **Email Verification** | Full email verification for Discord accounts via Mail API |
+| **Phone Verification** | Phone verification support via Phone API |
+| **Account Humanization** | Advanced token aging and humanization techniques |
+| **Custom Fingerprints** | Use your own custom browser fingerprints for aged accounts |
+| **Invite Support** | Auto-join servers during registration |
+| **Token Generation** | High-quality, unlocked Discord token output |
 
 ---
 
-## Screenshot
-![picture](github_assets/token-gen-screenshot.png)
+## 🤝 Powerd By
 
-## Features 
-- **`Hcaptcha Solving`** - Solving Hcaptcha with anysolver.com
-- **`Verifying Discord Accounts`** - Verifies Discord Accounts By Mail API
-- **`Humanizing Discord Accounts`** - Humanizes Discord Tokens
-- **`Token Generation`** - Unlocked, High Quality Discord token
+| Service | Website | Description |
+|---------|---------|-------------|
+| **Anysolver** | [anysolver.com](https://anysolver.com) | Advanced CAPTCHA solving |
+| **NodeProxies** | [nodeproxies.xyz](https://nodeproxies.xyz) | Premium proxy solutions |
+| **OnlineSim** | [onlinesim.io](https://onlinesim.io) | Virtual phone numbers for SMS verification |
 
-## Tech Stack
-- Python
+---
 
-## Contributers
+## 👥 Contributors
 
-- **`VatosV2`** - Head Developer
-- **`zkamo`** - Hes js here
+| Role | Name |
+|------|------|
+| **Head Developer** | `VatosV2` |
+| **Hes Just Here** | `zkamo` |
 
+---
+
+
+> ⚠️ **Disclaimer:** This project is for **educational purposes only**. The authors are not responsible for any misuse or damage caused by this program. Use at your own risk.
