@@ -41,7 +41,7 @@
 | Service | Website | Description |
 |---------|---------|-------------|
 | **Anysolver** | [anysolver.com](https://anysolver.com) | Advanced CAPTCHA solving |
-| **NodeProxies** | [nodeproxies.xyz](https://nodeproxies.xyz) | Premium proxy solutions |
+| **NodeProxies** | [vaultproxies.net](https://vaultproxies.net/?r=ydu2zjodr6bcilsa) | Premium proxy solutions |
 | **OnlineSim** | [onlinesim.io](https://onlinesim.io) | Virtual phone numbers for SMS verification |
 
 ---
