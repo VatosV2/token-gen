@@ -57,7 +57,7 @@ class Color:
 
 
 class NexusColor:
-    COLOR_HEX_LIST = ["#0fafff", "#630fff", "#3b812a", "#9b6310"]
+    COLOR_HEX_LIST = ["#0fafff", "#630fff", "#26a178", "#9b6310"]
     RESET: str = "\033[0m"
     NEXUS: str = Color.hex_to_ansi("#cc00aa")
     RED: str = Color.hex_to_ansi("#ff001e")

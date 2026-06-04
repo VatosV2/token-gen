@@ -1,1 +1,5 @@
-
+curl_cffi
+Pillow
+random_name
+Requests
+websocket_client

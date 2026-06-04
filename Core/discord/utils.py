@@ -1,13 +1,11 @@
 import re
 import json
-import random
 import curl_cffi
 
 from json import dumps, loads, JSONDecodeError
 from typing import Union, Dict, Tuple, Optional
 
-from faker import Faker
-
+import random_name
 import requests
 import websocket
 from requests import RequestException
@@ -18,7 +16,7 @@ class DiscordSessionFactory:
         self.proxy = proxy
 
     def create(self):
-        session = curl_cffi.Session(impersonate="chrome")
+        session = curl_cffi.Session(impersonate="chrome146")
 
         if self.proxy:
             session.proxies = {
@@ -133,13 +131,6 @@ class DiscordUtils:
         return {"status": "invalid"}
 
     @staticmethod
-    def _get_username(session) -> Optional[str]:
-        username = Faker().first_name() + "_" + Faker().last_name() + str(random.randint(1000, 9999))
-        r = session.post("https://discord.com/api/v9/unique-username/username-attempt-unauthed", json={"username": username})
-        if r.ok:
-            data = r.json()
-            if data["taken"]:
-                return DiscordUtils._get_username(session)
-            
-            return username
-        return DiscordUtils._get_username(session)
+    def _get_username() -> Optional[str]:
+        username = random_name.generate_name(separator="_")
+        return username

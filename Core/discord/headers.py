@@ -17,13 +17,12 @@ class HeaderBuilder:
         self._header_cache: dict = {}
         self._cookie_cache: dict = {}
 
-        self.chrome_version = random.randint(145, 148)
+        self.chrome_version = 146
         self.user_agent = (
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
             "AppleWebKit/537.36 (KHTML, like Gecko) "
             f"Chrome/{self.chrome_version}.0.0.0 Safari/537.36"
         )
-
 
     def _super_properties(self, invite_code: Optional[str] = None) -> str:
         # Imagine using Xbox One Device Spoof for no reason

@@ -1,6 +1,5 @@
 import json
 import os
-import time
 import threading
 from queue import Queue
 
@@ -77,8 +76,8 @@ def main():
             """)
 
     proxy_provider = ProxyProvider("io/input/proxies.txt")
-    threads_count = int(config.get("threads", 1))                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;threads_count = 5 if threads_count > 100 else threads_count
-
+    threads_count = int(config.get("generator", {}).get("thread_count", 5))
+    
     queue = Queue()
 
     for _ in range(threads_count):
@@ -93,9 +92,7 @@ def main():
             
             for _ in range(threads_count * 2): 
                 queue.put("generate")
-                time.sleep(5)
 
-            time.sleep(5)  
     except KeyboardInterrupt:
         stats.stop_event.set()
         print("Stopping...")

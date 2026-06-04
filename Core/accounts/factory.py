@@ -1,3 +1,5 @@
+import re
+
 from Core.accounts.context import AccountContext
 from Core.utils.utils import Utils
 from Core.discord.utils import DiscordUtils
@@ -21,12 +23,21 @@ class AccountContextFactory:
         )
         
         mail_string = Utils.random_string()
-        username = DiscordUtils._get_username(self.session) if self.config["humanizer"]["enabled"] and self.config["humanizer"]["username"] else mail_string
+        username = DiscordUtils._get_username() if self.config["humanizer"]["enabled"] and self.config["humanizer"]["username"] else mail_string
         password = Utils.random_password()
         
         email = self.mail_api.create_account(mail_string, password)
-        invite = self.config["generator"].get("invite", None)
-        
+        invite = (
+            re.search(
+                r"(?:https?://)?(?:www\.)?(?:discord\.gg|discord(?:app)?\.com/invite)/([A-Za-z0-9-]+)",
+                self.config["generator"].get("invite", ""),
+            ).group(1)
+            if re.search(
+                r"(?:https?://)?(?:www\.)?(?:discord\.gg|discord(?:app)?\.com/invite)/([A-Za-z0-9-]+)",
+                self.config["generator"].get("invite", ""),
+            )
+            else self.config["generator"].get("invite", None)
+        )        
         birthday = Utils.random_birthday()
         y, m, d = birthday
 
