@@ -88,9 +88,9 @@ We partner with the most reliable infrastructure providers in the automation spa
 
 ## 👥 Contributors
 
-Nexus is built and maintained by a dedicated core team.
+The repo is built and maintained by a dedicated core team.
 
-* **`VatosV2`** — Head Developer & Lead Architect
+* **`VatosV2`** — Developer 
 * **`zkamo`** — Hes just here
 
 ---
