@@ -60,9 +60,17 @@
 
 <hr />
 
+<h2>📢 Stay Updated</h2>
+
+<h3>5. Join the Telegram Channel</h3>
+<p>Captcha providers and sub-services change frequently. Stay updated on which subprovider is currently working by joining our Telegram channel:</p>
+<p><strong><a href="https://t.me/cfvatos">t.me/cfvatos</a></strong></p>
+
+<hr />
+
 <h2>⚙️ Configuration & Run</h2>
 
-<h3>5. Edit config.json</h3>
+<h3>6. Edit config.json</h3>
 <p>Open the <code>config.json</code> file in the main folder. You need to replace the placeholder values for <strong>"api_key"</strong> (under solver) and <strong>"mail_api_key"</strong> (under verification) with your actual keys:</p>
 
 ```json
@@ -99,3 +107,5 @@
         "censor_token": false
     }
 }
+```
+<p>Once configured, run the generator and you're good to go.</p>
