@@ -15,7 +15,7 @@
 <p align="center">
   <a href="#-features">Features</a> •
   <a href="#-preview">Preview</a> •
-  <a href="#-proxy-benchmarks">Proxy Benchmarks</a> 
+  <a href="setup.md">Setup Guide</a> •
   <a href="https://t.me/cfvatos">Telegram Support</a>
 </p>
 
