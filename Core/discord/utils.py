@@ -27,6 +27,7 @@ class DiscordSessionFactory:
         return session
 
 class DiscordUtils:
+    _cached_build_number = None
     
     @staticmethod
     def get_fingerprint(dcfduid, sdcfduid, session):
@@ -62,7 +63,8 @@ class DiscordUtils:
 
     @staticmethod
     def get_web() -> int:
-        """Fetch the build number from the Discord web app page."""
+        if DiscordUtils._cached_build_number is not None:
+            return DiscordUtils._cached_build_number
         try:
             page = requests.get("https://discord.com/app").text
             assets = re.findall(r'src="/assets/([^"]+)"', page)
@@ -70,7 +72,8 @@ class DiscordUtils:
             for asset in reversed(assets):
                 js = requests.get(f"https://discord.com/assets/{asset}").text
                 if "buildNumber:" in js:
-                    return int(js.split('buildNumber:"')[1].split('"')[0])
+                    DiscordUtils._cached_build_number = int(js.split('buildNumber:"')[1].split('"')[0])
+                    return DiscordUtils._cached_build_number
 
         except RequestException as e:
             print(f"Error fetching build from web: {e}")
