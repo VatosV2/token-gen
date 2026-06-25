@@ -1,59 +1,100 @@
 <p align="center">
   <a href="https://github.com/cf-vatos/token-gen">
-    <img src="github_assets/nexuspng.ico" width="120" height="120" alt="Logo">
+    <img src="github_assets/nexuspng.ico" width="120" height="120" alt="Nexus Token Gen Logo">
   </a>
 </p>
 
-<h3 align="center">??? Token Gen <a href="https://t.me/cfvatos"></a></h3>
+<h1 align="center">Nexus Token Gen</h1>
 
 <p align="center">
-  Most Advanced Token Gen - Powered by <a href="https://anysolver.com">Anysolver.com</a>
-  <br/>
-  <br/>
-  <a href="https://t.me/cfvatos">Telegram Channel</a>
-  <a>‎ ‎ Star to support ⭐</a>
+  <strong>The Most Advanced Discord Token Generator</strong>
+  <br />
+  Powered by <a href="https://anysolver.com">Anysolver.com</a>
 </p>
 
-<br/>
+<p align="center">
+  <a href="#-features">Features</a> •
+  <a href="#-preview">Preview</a> •
+  <a href="setup.md">Setup Guide</a> •
+  <a href="https://t.me/cfvatos">Telegram Support</a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/cf-vatos/token-gen/stargazers">
+    <img src="https://img.shields.io/github/stars/vatosv2/token-gen?style=for-the-badge&logo=github&color=darkgreen" alt="GitHub Stars">
+  </a>
+  <img src="https://img.shields.io/badge/License-Unlicense-blue?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/badge/Maintained%3F-yes-green?style=for-the-badge" alt="Maintained">
+</p>
 
 ---
 
 ## 📸 Preview
-![picture](github_assets/token-gen-screenshot.png)
+
+<p align="center">
+  <img src="github_assets/token-gen-screenshot.png" alt="Nexus Token Gen Preview" width="100%" style="border-radius: 8px;">
+</p>
+
 ---
 
 ## ✨ Features
 
-| Feature | Description |
-|---------|-------------|
-| **HCaptcha Solving** | Automated solving via <a href="https://anysolver.com" target="_blank">Anysolver.com</a> |
-| **Email Verification** | Full email verification for Discord accounts via Mail API |
-| **Phone Verification** | Phone verification support via Phone API |
-| **Account Humanization** | Advanced token aging and humanization techniques |
-| **Custom Fingerprints** | Use your own custom browser fingerprints for aged accounts |
-| **Invite Support** | Auto-join servers during registration |
-| **Token Generation** | High-quality, unlocked Discord token output |
+* 🛡️ Automated **HCaptcha Solving** via [Anysolver](https://anysolver.com)
+* ✉️ Full **Email Verification** via [Cybertemp](https://cybertemp.xyz)
+* 📱 **Phone Verification** via API
+* 🎭 Advanced **Account Humanization**
+* 🌐 Custom **Browser Fingerprints**
+* 🚀 Auto-Join **Server Invites**
 
 ---
 
-## 🤝 Powerd By
+## 🔌 Featured Sponsor
 
-| Service | Website | Description |
-|---------|---------|-------------|
-| **Anysolver** | [anysolver.com](https://anysolver.com) | Advanced CAPTCHA solving |
-| **NodeProxies** | [vaultproxies.net](https://vaultproxies.net/?r=ydu2zjodr6bcilsa) | Premium proxy solutions |
-| **OnlineSim** | [onlinesim.io](https://onlinesim.io) | Virtual phone numbers for SMS verification |
+<p align="center">
+  <a href="https://nodeproxies.xyz/register?ref=4259899A">
+    <img src="https://nodeproxies.xyz/standard.gif" alt="NodeProxies Banner" width="100%" style="border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  </a>
+</p>
+
+> 🎁 **Exclusive Deal:** Get **10% OFF** your first 10GB with NodeProxies using coupon code:  
+> **`VATOSMOGS`** — [Claim your discount here](https://nodeproxies.xyz/register?ref=4259899A).
+
+---
+
+## 🌐 Proxy Benchmarks
+
+> [!NOTE]  
+> Performance, unlock rates, and speed may vary based on your geographic location and active threads. Always run a small test batch before scaling up.
+
+| Rank | Provider | Speed | Stability | Price | Ideal Use Case |
+| :---: | :--- | :---: | :---: | :---: | :--- |
+| 🥇 | **[NodeProxies](https://nodeproxies.xyz/register?ref=4259899A)** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | `$` | **Best Choice:** Ultra-fast residential pool, highest success rates |
+| 🥈 | **[VitalProxies](https://www.vital-proxies.com/?ref=7kglreh2)** | ⭐⭐⭐⭐☆ | ⭐⭐⭐⭐⭐ | `$$$` | High-reliability, premium infrastructure for critical tasks |
+| 🥉 | **[VaultProxies](https://vaultproxies.net/?r=ydu2zjodr6bcilsa)** | ⭐⭐⭐⭐☆ | ⭐⭐⭐☆☆ | `$` | Cost-effective residential proxies tailored for high-volume loads |
+
+---
+
+## 🤝 Integrations & Ecosystem
+
+We partner with the most reliable infrastructure providers in the automation space to keep the Gen running flawlessly:
+
+| Service | Protocol / Type | Role in Ecosystem |
+| :--- | :--- | :--- |
+| **[Anysolver](https://anysolver.com)** | Captcha API | Handles complex CAPTCHA and anti-bot verification challenges |
+| **[OnlineSim](https://onlinesim.io)** | SMS API | Provisions virtual phone numbers for instant SMS bypassing |
+| **[Cf-Group](https://t.me/cfvatos)** | Community | Join our official Telegram channel for updates and changelogs |
 
 ---
 
 ## 👥 Contributors
 
-| Role | Name |
-|------|------|
-| **Head Developer** | `VatosV2` |
-| **Hes Just Here** | `zkamo` |
+The repo is built and maintained by a dedicated core team.
+
+* **`VatosV2`** — Developer 
+* **`zkamo`** — Hes just here
 
 ---
 
-
-> ⚠️ **Disclaimer:** This project is for **educational purposes only**. The authors are not responsible for any misuse or damage caused by this program. Use at your own risk.
+<p align="center">
+  <sub>⚠️ <strong>Disclaimer:</strong> This project is developed strictly for <strong>educational and research purposes only</strong>. The authors and contributors assume no liability for any misuse, policy violations, or damages resulting from the use of this software. Proceed at your own discretion.</sub>
+</p>
