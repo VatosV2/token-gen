@@ -14,6 +14,7 @@
         "mail_verification": true,
         "mail_provider": "zeromail",
         "mail_api_key": "",
+        "pro_domains": false,
         "phone_verification": false,
         "phone_provider": "onlinesim",
         "phone_api_key": "",

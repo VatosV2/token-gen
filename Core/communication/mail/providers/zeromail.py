@@ -6,15 +6,23 @@ from Core.communication.mail.base import MailApi
 class ZeromailApi(MailApi):
     BASE_URL = "https://api.0mail.tech/api"
 
-    def __init__(self, api_key: str):
+    def __init__(self, api_key: str, use_pro_domains: bool = False):
         super().__init__(api_key)
         self.api_key = api_key
+        self.use_pro_domains = use_pro_domains
         self.headers = {
             "Authorization": f"Bearer {api_key}"
-            }
-        self.domains = self.get_domains()
-
+        }
+        self.domains = []
+    
     def create_account(self, username: str, password: str = None) -> Optional[str]:
+        # Populate domains list dynamically from API if not loaded yet
+        if not self.domains:
+            self.domains = self.get_domains()
+            
+        if not self.domains:
+            raise RuntimeError("No available domains returned from ZeroMail API")
+
         domain = random.choice(self.domains)
         email = f"{username}@{domain}"
         
@@ -95,16 +103,37 @@ class ZeromailApi(MailApi):
                 headers=self.headers,
                 timeout=10,
             )
+            if not resp.ok:
+                raise RuntimeError(
+                    f"ZeroMail API returned {resp.status_code}: {resp.text}"
+                )
+            raw_domains = resp.json().get("domains", [])
         except requests.RequestException as e:
             raise RuntimeError(f"Network error fetching ZeroMail domains: {e}")
 
-        if not resp.ok:
-            raise RuntimeError(
-                f"ZeroMail API returned {resp.status_code}: {resp.text}"
-            )
+        has_pro_plan = False
+        if self.use_pro_domains:
+            try:
+                profile_resp = requests.get(
+                    f"{self.BASE_URL}/profile",
+                    headers=self.headers,
+                    timeout=10
+                )
+                if profile_resp.ok:
+                    plan_id = profile_resp.json().get("plan", {}).get("id", "free")
+                    if plan_id in ["pro", "elite"]:
+                        has_pro_plan = True
+            except Exception:
+                pass  
 
-        data = resp.json().get("domains", [])
-        return [d["domain"] for d in data if isinstance(d, dict) and "domain" in d]
+        if self.use_pro_domains and has_pro_plan:
+            filtered = [d["domain"] for d in raw_domains if isinstance(d, dict) and d.get("premium") is True]
+            if not filtered:
+                filtered = [d["domain"] for d in raw_domains if isinstance(d, dict) and not d.get("premium")]
+        else:
+            filtered = [d["domain"] for d in raw_domains if isinstance(d, dict) and not d.get("premium")]
+
+        return filtered
 
     def delete_mailbox(self, email: str) -> bool:
         try:

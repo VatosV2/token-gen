@@ -1,4 +1,5 @@
 from Core.NexusColors.color import NexusColor
+from Core.communication.mail.providers.cybertemp import CybertempApi
 from Core.communication.mail.providers.zeromail import ZeromailApi
 
 class TokenGenerator:
@@ -42,7 +43,7 @@ class TokenGenerator:
             ctx.upn = self.mail_api.wait_for_verification(email=ctx.email, password=ctx.password)
             self.email_verifier.verify_token(ctx)
             
-            if isinstance(self.mail_api, ZeromailApi):
+            if isinstance(self.mail_api, (CybertempApi, ZeromailApi)):
                 self.mail_api.delete_mailbox(email=ctx.email)
                 
             self.storage.save(ctx, "email_verified")
@@ -66,7 +67,7 @@ class TokenGenerator:
             )
 
         finally:
-            if isinstance(self.mail_api, ZeromailApi) and ctx and hasattr(ctx, "email"):
+            if isinstance(self.mail_api, (CybertempApi, ZeromailApi)) and ctx and hasattr(ctx, "email"):
                 try:
                     self.mail_api.delete_mailbox(email=ctx.email)
                 except Exception:
