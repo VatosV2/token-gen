@@ -40,7 +40,7 @@
 ## ✨ Features
 
 * 🛡️ Automated **HCaptcha Solving** via [Anysolver](https://anysolver.com)
-* ✉️ Full **Email Verification** via [Cybertemp](https://cybertemp.xyz)
+* ✉️ Full **Email Verification** via [ZeroMail](https://0mail.tech)
 * 📱 **Phone Verification** via API
 * 🎭 Advanced **Account Humanization**
 * 🌐 Custom **Browser Fingerprints**
