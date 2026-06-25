@@ -6,13 +6,13 @@
     },
     "solver": {
         "service": "anysolver",
-        "subservice": "VoidSolver",
+        "subservice": "Razorcap",
         "api_key": "",
         "captcha_timeout": 120
     },
     "verification": {
         "mail_verification": true,
-        "mail_provider": "cybertemp",
+        "mail_provider": "zeromail",
         "mail_api_key": "",
         "phone_verification": false,
         "phone_provider": "onlinesim",

@@ -8,7 +8,7 @@ class MailApi(ABC):
     def __init__(self, api_key: str):
         self.api_key = api_key
         self.headers: Dict[str, str] = {
-            "X-API-Key": api_key
+            "X-API-KEY": api_key
         }
 
     @abstractmethod
@@ -40,5 +40,4 @@ class MailApi(ABC):
                   raise RuntimeError(e)
 
             time.sleep(poll_interval)
-
         return None
