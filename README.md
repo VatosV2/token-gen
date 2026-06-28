@@ -37,17 +37,6 @@
 
 ---
 
-## ✨ Features
-
-* 🛡️ Automated **HCaptcha Solving** via [Anysolver](https://anysolver.com)
-* ✉️ Full **Email Verification** via [ZeroMail](https://0mail.tech)
-* 📱 **Phone Verification** via API
-* 🎭 Advanced **Account Humanization**
-* 🌐 Custom **Browser Fingerprints**
-* 🚀 Auto-Join **Server Invites**
-
----
-
 ## 🔌 Featured Sponsor
 <p align="center">
   <a href="https://0mail.tech/">
@@ -70,6 +59,18 @@
 
 > 🎁 **Exclusive Deal:** Get **10% OFF** your first 10GB with NodeProxies using coupon code:  
 > **`VATOSMOGS`** — [Claim your discount here](https://nodeproxies.xyz/register?ref=4259899A).
+
+
+---
+
+## ✨ Features
+
+* 🛡️ Automated **HCaptcha Solving** via [Anysolver](https://anysolver.com)
+* ✉️ Full **Email Verification** via [ZeroMail](https://0mail.tech)
+* 📱 **Phone Verification** via API
+* 🎭 Advanced **Account Humanization**
+* 🌐 Custom **Browser Fingerprints**
+* 🚀 Auto-Join **Server Invites**
 
 ---
 
