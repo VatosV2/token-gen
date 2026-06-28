@@ -45,18 +45,17 @@
 <p><strong>Note: The routing mode choice does not matter here, as the script automatically handles and overwrites it during runtime.</strong></p>
 
 <p align="left">
-  <img src="github_assets/anysolver.png" alt="AnySolver Keys" width="60%" style="max-width: 500px; border-radius: 6px; border: 1px solid #30363d;" />
+  <img src="github_assets/anysolver.png" alt="Anysolver Keys" width="60%" style="max-width: 500px; border-radius: 6px; border: 1px solid #30363d;" />
 </p>
+
 
 <h3>4. ZeroMail Key (Email Verification)</h3>
-<ol>
-  <li>Create a free account at <strong>0mail.tech</strong> (a paid tier is only required if u want to run more then 5 threads).</li>
-  <li>Navigate to the developer tab, locate the <strong>API Keys</strong> section, and copy your <strong>API KEY</strong>.</li>
-</ol>
+<ol> <li>Create a free account at <strong>0mail.tech</strong>.</li> <li>Navigate to the <strong>Developer</strong> tab, open the <strong>API Keys</strong> section, and copy your <strong>API Key</strong>.</li> <li>For the best results, upgrade to <strong>Pro Domains</strong> to achieve a higher success rate and run more threads simultaneously.</li> </ol>
 
 <p align="left">
-  <img src="github_assets/0mail.png" alt="CyberTemp Keys" width="50%" style="max-width: 400px; border-radius: 6px; border: 1px solid #30363d;" />
+  <img src="github_assets/0mail.png" alt="ZeroMail Keys" width="50%" style="max-width: 400px; border-radius: 6px; border: 1px solid #30363d;" />
 </p>
+
 
 <hr />
 
