@@ -63,18 +63,18 @@
 
 ---
 
-## ✨ Features
+## Features
 
-* 🛡️ Automated **HCaptcha Solving** via [Anysolver](https://anysolver.com)
-* ✉️ Full **Email Verification** via [ZeroMail](https://0mail.tech)
-* 📱 **Phone Verification** via API
-* 🎭 Advanced **Account Humanization**
-* 🌐 Custom **Browser Fingerprints**
-* 🚀 Auto-Join **Server Invites**
+* Automated **HCaptcha Solving** via [Anysolver](https://anysolver.com)
+* Full **Email Verification** via [ZeroMail](https://0mail.tech)
+* **Phone Verification** via API
+* Advanced **Account Humanization**
+* Custom **Discord Fingerprint** support
+* Auto-Join **Server Invites**
 
 ---
 
-## 🌐 Proxy Benchmarks
+## Proxy Benchmarks
 
 > [!NOTE]  
 > Performance, unlock rates, and speed may vary based on your geographic location and active threads. Always run a small test batch before scaling up.
@@ -87,7 +87,7 @@
 
 ---
 
-## 🤝 Integrations & Ecosystem
+## Integrations & Ecosystem
 
 We partner with the most reliable infrastructure providers in the automation space to keep the Gen running flawlessly:
 
@@ -104,8 +104,9 @@ We partner with the most reliable infrastructure providers in the automation spa
 
 The repo is built and maintained by a dedicated core team.
 
-* **`VatosV2`** — Developer 
-* **`zkamo`** — Hes just here
+* **`VatosV2`** — Developer
+* **`Cf-Development`** - Project Maintainer
+* **`zkamo`** — CF Contributer 
 
 ---
 
