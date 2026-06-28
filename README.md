@@ -49,6 +49,18 @@
 ---
 
 ## 🔌 Featured Sponsor
+<p align="center">
+  <a href="https://0mail.tech/">
+    <img src="https://0mail.tech/zeromail.gif" alt="ZeroMail Banner" width="100%" style="border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  </a>
+</p>
+
+> Uses **Pro Domains** to ensure a **100% success rate** and eliminate **"Invalid Response"** errors.
+>
+> *Available with **Pro** and **Elite** subscriptions.*
+>
+> **`VATOSGIVES10`** — Save **10% on any annual subscription**.
+
 
 <p align="center">
   <a href="https://nodeproxies.xyz/register?ref=4259899A">
