@@ -94,6 +94,7 @@ We partner with the most reliable infrastructure providers in the automation spa
 | Service | Protocol / Type | Role in Ecosystem |
 | :--- | :--- | :--- |
 | **[Anysolver](https://anysolver.com)** | Captcha API | Handles complex CAPTCHA and anti-bot verification challenges |
+| **[ZeroMail](https://zeromail.tech)** | Mail API | Provisions email inboxes for instant email verification |
 | **[OnlineSim](https://onlinesim.io)** | SMS API | Provisions virtual phone numbers for instant SMS bypassing |
 | **[Cf-Group](https://t.me/cfvatos)** | Community | Join our official Telegram channel for updates and changelogs |
 
