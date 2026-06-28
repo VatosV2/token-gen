@@ -4,7 +4,7 @@
 
 <hr />
 
-<h2>📋 Prerequisites</h2>
+<h2>Requirements</h2>
 
 <p>Before starting, make sure your computer has the correct environment:</p>
 <ul>
@@ -71,6 +71,7 @@
 
 <h3>6. Edit config.json</h3>
 <p>Open the <code>config.json</code> file in the main folder. You need to replace the placeholder values for <strong>"api_key"</strong> (under solver) and <strong>"mail_api_key"</strong> (under verification) with your actual keys:</p>
+<p><strong>Note:</strong> AnySolver is only a router. The <code>subprovider</code> determines which backend service is used, and the working providers change periodically. Check the <strong>group tab above</strong> for the latest recommended subprovider.</p>
 
 ```json
 {
