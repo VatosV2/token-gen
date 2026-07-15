@@ -16,7 +16,6 @@ class ZeromailApi(MailApi):
         self.domains = []
     
     def create_account(self, username: str, password: str = None) -> Optional[str]:
-        # Populate domains list dynamically from API if not loaded yet
         if not self.domains:
             self.domains = self.get_domains()
             
@@ -121,7 +120,7 @@ class ZeromailApi(MailApi):
                 )
                 if profile_resp.ok:
                     plan_id = profile_resp.json().get("plan", {}).get("id", "free")
-                    if plan_id in ["pro", "elite"]:
+                    if plan_id in ["pro", "elite", "seller"]:
                         has_pro_plan = True
             except Exception:
                 pass  
